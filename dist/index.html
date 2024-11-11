@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Lab Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="module" crossorigin src="/assets/index-DG8Wp_bU.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-cnw0HdBE.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">INNOVATION LAB</h1>
+        <div class="counter">
+            <span id="count">0</span> people currently enjoying the lab
+        </div>
+        
+        <div class="video-container">
+            <video id="video" playsinline autoplay muted></video>
+            <canvas id="overlay"></canvas>
+        </div>
+
+        <div class="settings">
+            <button class="settings-toggle">
+                <i class="fas fa-cog"></i>
+            </button>
+            <div class="settings-panel">
+                <div class="settings-content">
+                    <select id="cameraSelect" class="camera-select">
+                        <option value="">Select Camera</option>
+                    </select>
+                    <button id="startButton" class="button">Start Camera</button>
+                    <button id="roiButton" class="button">Set ROI</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
